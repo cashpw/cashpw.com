@@ -1,3 +1,66 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://cashpw.com/"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en-us"
+theme = "PaperModX"
+title = "Cash Prokop-Weaver"
+googleAnalytics = "UA-69408538-1"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+DateFormat = "2006-01-02"
+# Instant click breaks some javascript
+EnableInstantClick = false
+ShowCodeCopyButtons = true
+ShowReadingTime = true
+ShowToc = true
+TocOpen = true
+TocSide = "left"
+author = "Cash Prokop-Weaver"
+defaultTheme = "dark"
+description = "Software engineer"
+enableMathjax = true
+env = "production"
+hideMeta = false
+hideSummary = false
+showAuthor = false
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = """
+I work as a software engineer and make ceramics.
+
+I publish my [notes](http://notes.cashpw.com) to [work with the garage door up](https://notes.andymatuschak.org/Work_with_the_garage_door_up).
+"""
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:cashbweaver@gmail.com"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/cashpw"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/cashweaver"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/cashweaver"
+
+  [[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/cashweaver"
+
+  [[params.socialIcons]]
+  name = "recipes"
+  url = "/tags/recipe/"
+
+[markup.goldmark.renderer]
+unsafe = true
