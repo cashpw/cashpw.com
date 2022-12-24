@@ -1,0 +1,26 @@
+{{- $scratch := newScratch }}
+
+{{- if (.Params.aliases) -}}
+  {{- range .Params.aliases -}}
+    {{- if (len (findRE "/posts/[a-f0-9]{8}" .)) -}}
+      {{ $scratch.Set "permalink" (printf "<a href=\"%s\">Permalink</a>" . ) }}
+    {{- else -}}
+      {{ $scratch.Add "aliases" (slice (printf "<a href=\"%s\">%s</a>" . (replaceRE ".posts." "" .))) }}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if ($scratch.Get "permalink") }}
+    <div class="post-meta post-references">
+    {{ $scratch.Get "permalink" | safeHTML }}
+    </div>
+  {{- end -}}
+
+  {{- if ($scratch.Get "aliases") }}
+    <div class="post-meta post-references">
+    <span style="margin-right: 1ch;"><abbr title="Also Known As">AKA</abbr>:</span>
+    {{- with ($scratch.Get "aliases") }}
+      {{- delimit . ", &nbsp;" }}
+    {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}

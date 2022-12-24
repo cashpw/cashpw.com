@@ -1,0 +1,6 @@
+.post-meta.post-tags a {
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: inherit;
+}

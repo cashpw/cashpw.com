@@ -1,0 +1,16 @@
+<script>
+  const backlinkHeader = document.getElementById("backlinks");
+  if (backlinkHeader) {
+      const newBacklinkHeader = document.createElement('h4');
+      newBacklinkHeader.innerHTML = backlinkHeader.innerHTML;
+      const backlinkList = backlinkHeader.nextElementSibling;
+      console.log(backlinkList);
+      const aside = document.createElement('aside');
+      aside.setAttribute('class', 'backlinks toc side right');
+      backlinkHeader.parentNode.insertBefore(aside, backlinkHeader);
+      aside.appendChild(newBacklinkHeader);
+      aside.appendChild(backlinkList);
+      backlinkHeader.remove();
+      newBacklinkHeader.id = "backlinks";
+  }
+</script>

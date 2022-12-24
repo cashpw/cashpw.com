@@ -1,0 +1,142 @@
+/* Links, <a> */
+
+.dark,
+:root {
+  --link-color: #f96316;
+  --link-hover-color: #f97316;
+  --link-underline-shadow: 0 1px 0 var(--link-color);
+  --link-hover-underline-color: #f97316;
+  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+
+.main .post-header a,
+.main .post-content a,
+.main .entry-content a {
+    font-weight: 500;
+    color: var(--link-color);
+    box-shadow: var(--link-underline-shadow);
+    transition: var(--link-transition);
+}
+.main .post-header a:hover,
+.main .post-content a:hover,
+.main .entry-content a:hover {
+    box-shadow: var(--link-hover-underline-shadow);
+}
+
+.social-icons a {
+    box-shadow: none;
+}
+.social-icons a:after {
+    display: none;
+}
+
+.terms-tags a {
+    box-shadow: none;
+    color: var(--primary);
+}
+
+/* First and last child are empty. */
+.home-info p+p {
+    margin-top: 1rem;
+}
+
+.home-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Backlinks */
+
+.main .post-content .backlinks h1,
+.main .post-content .backlinks h2,
+.main .post-content .backlinks h3,
+.main .post-content .backlinks h4,
+.main .post-content .backlinks h5,
+.main .post-content .backlinks h6 {
+    padding: 0;
+    margin-top: 10px;
+    margin-inline-start: 15px;
+}
+.main .post-content .backlinks h4 {
+    font-size: 1rem;
+}
+
+.main .post-content .backlinks ul {
+    padding-inline-start: 40px;
+    padding-inline-end: 20px;
+    padding-bottom: 10px;
+}
+
+.main .post-content .backlinks li {
+    line-height: 1em;
+}
+
+.main .post-content .backlinks li a {
+    border-radius: 0;
+    color: var(--link-color);
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+/* Tables */
+table td {
+    vertical-align: top;
+}
+
+/* Recipes */
+.scaler {
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--code-bg);
+    color: var(--content);
+    margin: 0 5px;
+    padding: 0.2em;
+}
+input.scaler {
+    padding: 0.2em 0.6em;
+    width: 10ch;
+}
+.servings {
+    font-weight: bold;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Buttons */
+button:hover {
+    background-color: var(--secondary);
+    color: var(--entry);
+}
+button.scaler {
+    width: 4ch;
+}
+
+/* Table of contents*/
+.toc summary h2 {
+    margin: 0;
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.toc a {
+    box-shadow: none;
+}
+
+.toc.flashcards li a {
+    padding: 0;
+    border-radius: 0;
+    display: inline;
+    line-height: inherit;
+}
+
+/* <blockquote> */
+
+.post-content blockquote {
+    opacity: 1;
+}

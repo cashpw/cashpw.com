@@ -1,0 +1,66 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    <div class="post-meta post-references">
+      {{- partial "post_references.html" . -}}
+    </div>
+    {{- partial "post_aliases.html" . -}}
+    <div class="post-meta post-stars">
+      {{- partial "post_stars.html" . -}}
+    </div>
+    <!-- {{- partial "post_tags.html" . -}} -->
+  {{- end }}
+  </header>
+  {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  <div class="post-content">
+  {{- if .Content }}
+    {{- partial "recipe_meta.html" . -}}
+    {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}
+      {{ .Content }}
+    {{ end }}
+  {{- end }}
+  </div>
+
+  <footer class="post-footer">
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+    {{ partial "recipe_support.html" . }}
+    {{ partial "flashcards.html" . }}
+    {{ partial "backlinks.html" . }}
+    <script src="{{ "js/citations/custom.js" | urlize | relURL }}"></script>
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
