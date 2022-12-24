@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://cashpw.com/sitemap.xml
