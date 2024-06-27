@@ -2,20 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Cash Prokop-Weaver</title>
-    <link>http://cashpw.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Cash Prokop-Weaver</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 14 Oct 2022 11:20:00 -0700</lastBuildDate><atom:link href="http://cashpw.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>concept</title>
-      <link>http://cashpw.com/categories/concept/</link>
-      <pubDate>Fri, 14 Oct 2022 11:20:00 -0700</pubDate>
-      
-      <guid>http://cashpw.com/categories/concept/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

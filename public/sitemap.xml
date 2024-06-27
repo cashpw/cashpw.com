@@ -2,29 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://cashpw.com/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://cashpw.com/categories/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://cashpw.com/tags/concept/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
-  </url><url>
-    <loc>http://cashpw.com/categories/concept/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
-  </url><url>
-    <loc>http://cashpw.com/posts/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
-  </url><url>
-    <loc>http://cashpw.com/tags/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
-  </url><url>
-    <loc>http://cashpw.com/posts/a2e19c5c-0969-49ae-a0c2-740fc61279c3/</loc>
-    <lastmod>2022-12-17T14:23:58-08:00</lastmod>
-  </url><url>
-    <loc>http://cashpw.com/archives/</loc>
-  </url><url>
-    <loc>http://cashpw.com/search/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
