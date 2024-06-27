@@ -30,7 +30,7 @@ url = "https://github.com/cashpw"
 
 [[params.socialIcons]]
 name = "linkedin"
-url = "https://linkedin.com/in/cashweaver"
+url = "https://linkedin.com/in/cashpw"
 
 [markup.goldmark.renderer]
 unsafe = true
