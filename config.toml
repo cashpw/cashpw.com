@@ -18,7 +18,7 @@ env = "production"
 [params.profileMode]
 enabled = true
 title = "Hi there 🎉"
-subtitle = """I work as a software engineer and make ceramics."""
+subtitle = """I work as a software engineer, potter, and photographer. <a href=\"mailto:cash@cashpw.com\">Get in touch</a>!"""
 
 [[params.socialIcons]]
 name = "email"

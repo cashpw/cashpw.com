@@ -1,14 +1,20 @@
 /* Links, <a> */
 
-.dark,
 :root {
-  --link-color: #f96316;
-  --link-hover-color: #f97316;
-  --link-underline-shadow: 0 1px 0 var(--link-color);
-  --link-hover-underline-color: #f97316;
-  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+  --link-color: #c64600;
+  --link-hover-color: #c64600;
+  --link-hover-underline-color: #c64600;
+  --link-underline-shadow: inset 0 -2px var(--link-color);
+  --link-hover-underline-shadow: inset 0 -2px var(--link-hover-underline-color), 0 2px var(--link-hover-underline-color);
 }
 
+.dark {
+  --link-color: #E66100;
+  --link-hover-color: #E66100;
+  --link-hover-underline-color: #E66100;
+}
+
+.main .profile a,
 .main .post-header a,
 .main .post-content a,
 .main .entry-content a {
@@ -17,13 +23,14 @@
     box-shadow: var(--link-underline-shadow);
     transition: var(--link-transition);
 }
+.main .profile a:hover,
 .main .post-header a:hover,
 .main .post-content a:hover,
 .main .entry-content a:hover {
     box-shadow: var(--link-hover-underline-shadow);
 }
 
-.social-icons a {
+.main .social-icons a {
     box-shadow: none;
 }
 .social-icons a:after {
