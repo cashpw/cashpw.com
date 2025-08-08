@@ -1,0 +1,6 @@
+:PROPERTIES:
+:LAST_MODIFIED: [2025-08-08 Fri 09:13]
+:END:
+#+title: Readme
+
+My personal website.
