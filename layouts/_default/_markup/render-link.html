@@ -1,5 +1,0 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
-<!--
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>{{- if strings.HasPrefix .Destination "http" }} (<a href="https://web.archive.org/web/{{ .Page.Date.Year }}*/{{ .Destination | safeURL }}" rel="noopener noreferrer" target="_blank">a</a>){{ end }}
--->
-{{- /* This comment removes trailing newlines. */ -}}
