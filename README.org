@@ -1,6 +1,6 @@
 :PROPERTIES:
-:LAST_MODIFIED: [2025-08-08 Fri 09:13]
+:LAST_MODIFIED: [2025-12-11 Thu 16:42]
 :END:
 #+title: Readme
 
-My personal website.
+My personal website and blog. Favicon links provided by [[https://github.com/cashpw/favicon-links][cashpw/favicon-links]].
