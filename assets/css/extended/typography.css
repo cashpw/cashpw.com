@@ -1,5 +1,13 @@
 /* Links, <a> */
 
+body {
+  font-family: "Noto Serif", Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+}
+
+.logo a {
+    font-weight: normal;
+}
+
 :root {
   --link-color: #c64600;
   --link-hover-color: #c64600;
