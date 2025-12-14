@@ -1,8 +1,106 @@
-/* Links, <a> */
+/*
+ * Crimson Pro font is 75 characters wide at 24px. We'll use this as baseline text.
+ */
 
 body {
-  font-family: "Noto Serif", Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-family: "Crimson Pro", Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+.first-entry .entry-content {
+    font-size: 24px;
+}
+.entry-header h2 {
+    font-size: 28px;
+}
+.entry-content {
+    font-size: 24px;
+}
+.entry-footer {
+    font-size: 20px;
+}
+
+.post-meta {
+    font-size: 20px;
+}
+.post-content {
+    font-size: 24px;
+    font-weight: 200;
+}
+.post-content pre {
+    font-size: 18px;
+}
+
+.archive-posts {
+    font-size: 24px;
+}
+.archive-count,
+.archive-meta {
+    font-size: 20px;
+}
+
+.nav #menu li a {
+    font-size: 20px;
+}
+.nav #menu li a:hover span {
+    border-bottom: 2px solid;
+}
+
+.footer {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 720px) {
+    .first-entry .entry-content {
+        font-size: 20px;
+    }
+    .entry-header h2 {
+        font-size: 24px;
+    }
+    .entry-content {
+        font-size: 20px;
+    }
+    .entry-footer {
+        font-size: 16px;
+    }
+
+    .post-meta {
+        font-size: 16px;
+    }
+    .post-content {
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .post-content pre {
+        font-size: 16px;
+    }
+
+    .archive-posts {
+        font-size: 20px;
+    }
+    .archive-count,
+    .archive-meta {
+        font-size: 16px;
+    }
+
+    .nav #menu li a {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+
+}
+
 
 .logo a {
     font-weight: normal;
@@ -26,7 +124,6 @@ html[data-theme="dark"] {
 .main .post-header a,
 .main .post-content a,
 .main .entry-content a {
-    font-weight: 500;
     color: var(--link-color);
     box-shadow: var(--link-underline-shadow);
     transition: var(--link-transition);
@@ -35,9 +132,12 @@ html[data-theme="dark"] {
 .main .post-header a:hover,
 .main .post-content a:hover,
 .main .entry-content a:hover {
+    box-shadow: var(--link-hover-underline-shadow);
+    /*
     background: var(--link-color);
     color: var(--theme);
     box-shadow: none;
+     **/
 }
 
 .main .social-icons a {

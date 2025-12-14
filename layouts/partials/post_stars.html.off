@@ -1,4 +1,0 @@
-{{- if (.Params.stars) -}}
-<span style="margin-right: 0.5ch;">Stars:</span>
-{{ strings.Repeat .Params.stars "⭐" }}
-{{- end -}}

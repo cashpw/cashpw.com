@@ -1,12 +1,10 @@
 a:not([href*='cashpw.com']):not([href^='#']):not([href^='/']):after {
-  background-position: 0 center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 16px 16px !important;
   content: '';
-  height: 16px;
-  margin-left: 0.5ch;
+  margin: 0 0.5ch;
   vertical-align: middle;
-  width: 16px;
 }
 a[href*='http://adamard.com']:after {
   background-image: url('/favicons/adamard.com.png');

@@ -1,4 +1,0 @@
-{{- if or (in .Params.tags "recipe") (in .Params.tags "ingredient") -}}
-<script src="{{ "js/scale-recipe/bundle.js" | urlize | relURL }}"></script>
-<script src="{{ "js/scale-recipe/custom.js" | urlize | relURL }}"></script>
-{{- end -}}
