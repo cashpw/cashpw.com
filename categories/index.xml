@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on Cash Prokop-Weaver</title><link>http://cashpw.com/categories/</link><description>Recent content in Categories on Cash Prokop-Weaver</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://cashpw.com/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Cash Prokop-Weaver</title>
+    <link>http://cashpw.com/categories/</link>
+    <description>Recent content in Categories on Cash Prokop-Weaver</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Dec 2025 11:49:20 -0800</lastBuildDate>
+    <atom:link href="http://cashpw.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project</title>
+      <link>http://cashpw.com/categories/project/</link>
+      <pubDate>Sat, 22 Nov 2025 11:22:00 -0800</pubDate>
+      <guid>http://cashpw.com/categories/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reference</title>
+      <link>http://cashpw.com/categories/reference/</link>
+      <pubDate>Sun, 06 Feb 2022 18:03:00 -0800</pubDate>
+      <guid>http://cashpw.com/categories/reference/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

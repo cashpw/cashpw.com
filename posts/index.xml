@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Cash Prokop-Weaver</title>
-    <link>http://cashpw.com/</link>
-    <description>Recent content in Home on Cash Prokop-Weaver</description>
+    <title>Posts on Cash Prokop-Weaver</title>
+    <link>http://cashpw.com/posts/</link>
+    <description>Recent content in Posts on Cash Prokop-Weaver</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Dec 2025 11:49:20 -0800</lastBuildDate>
-    <atom:link href="http://cashpw.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://cashpw.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hide private links in blog posts</title>
       <link>http://cashpw.com/posts/3643c979-736a-408e-9122-0cc8aea2ca85/</link>
@@ -56,13 +56,6 @@
       <pubDate>Sun, 06 Feb 2022 07:13:00 -0800</pubDate>
       <guid>http://cashpw.com/posts/32438fd5-c050-46a9-9611-97d571512f3e/</guid>
       <description>&lt;p&gt;These sites are fantastic examples of well-done implementations of the &lt;a href=&#34;http://cashpw.com/posts/b130e6f2-31a1-4c3a-ae8b-7d8208a69710/&#34;&gt;zettelkasten&lt;/a&gt; system. They serve as inspiration for my own notes.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://cashpw.com/posts/df479fb9-f7b0-4e3a-a7eb-41849fbc190e/&#34;&gt;Andy Matuschak&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://notes.andymatuschak.org/&#34;&gt;notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Alex Kehayias&amp;rsquo;s &lt;a href=&#34;https://notes.alexkehayias.com/&#34;&gt;notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Hugo Cisneros&amp;rsquo;s &lt;a href=&#34;https://hugocisneros.com/notes/&#34;&gt;notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/KasperZutterman/Second-Brain&#34;&gt;&amp;ldquo;A curated list of awesome public zettelkastens&amp;rdquo;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>http://cashpw.com/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://cashpw.com/search/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
