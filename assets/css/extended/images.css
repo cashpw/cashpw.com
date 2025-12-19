@@ -1,4 +1,0 @@
-/* Ensure images with transparent backgrounds are legible. */
-img[src$=".svg"], img[src$=".png"] {
-    background-color: white;
-}

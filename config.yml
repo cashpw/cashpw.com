@@ -2,65 +2,32 @@ baseURL: http://cashpw.com/
 enableEmoji: true
 enableRobotsTXT: true
 languageCode: en-us
-theme: PaperMod
+theme: hugo-tufte
 title: Cash Prokop-Weaver
-refLinksErrorLevel: WARNING
+#
 minify:
   disableXML: true
   minifyOutput: true
+
 outputs:
   home:
     - HTML
     - RSS
     - JSON
-menu:
-  main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 10
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 20
 params:
-  DateFormat: 2006-01-02
-  author: Me
+  # hugo-tufte
+  # showPoweredBy: true
+  alwaysShowToc: true
+  showPostsOnHome: "list"
   hideAuthor: true
-  defaultTheme: auto
-  description: Personal website and blog
-  env: production
-  homeInfoParams:
-    Title: Hi there 🎉
-    Content:
-      This is my personal website and blog. I write about thoughts I have,
-      books I read, my career and its culture, photography, parenting, and more.
-      <a href="mailto:cash@cashpw.com">Get in touch</a>!
-  socialIcons:
-    - name: email
-      url: mailto:cash@cashpw.com
-    - name: github
-      url: https://github.com/cashpw
-    - name: linkedin
-      url: https://linkedin.com/in/cashpw
-  editPost:
-    URL: https://github.com/cashpw/cashpw.com/content
-    Text: Suggest Changes
-    appendFilePath: true
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10
-    keys:
-      - title
-      - permalink
-      - summary
-      - content
+  mainSections: ["posts"]
+  includeMathWhenNeeded: true
+  toc: true
+  hideTags: true
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: catppuccin-macchiato
