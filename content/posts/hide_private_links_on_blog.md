@@ -2,7 +2,7 @@
 title = "Hide private links in blog posts"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-27T07:08:00-08:00
-lastmod = 2025-12-19T11:49:20-08:00
+lastmod = 2025-12-17T22:06:00-08:00
 draft = false
 slug = "3643c979-736a-408e-9122-0cc8aea2ca85"
 +++

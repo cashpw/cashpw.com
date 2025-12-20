@@ -2,12 +2,19 @@
 title = "Blog"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-22T11:22:00-08:00
-lastmod = 2025-12-19T11:49:20-08:00
+lastmod = 2025-12-19T14:13:00-08:00
 tags = ["project"]
 categories = ["project"]
 draft = false
+lastmod = "2025-12-19T14:13:00-0800"
 slug = "21336625-aab6-421f-98c8-988538fc0846"
 +++
+
+```emacs-lisp
+(encode-time
+                                (org-parse-time-string
+                                 (org-extras-get-property (point-min) "LAST_MODIFIED")))
+```
 
 I thought I'd write a little bit about this blog for anyone curious as well as for my future{{< sidenote >}}So I can remember what I've done, and why.{{< /sidenote >}}and present{{< sidenote >}}Write to think{{< /sidenote >}}selves.
 
@@ -79,12 +86,9 @@ I enjoy the `sidenote` feature of this theme for non-essential tidbits and extra
 
 The theme supports `blockquote` tags:
 
-<div class="&quot;epigraph&quot;">
-
 > You think that because you understand "one" that you must therefore understand "two" because one and one make two. But you forget that you must also understand "and."
 >
 > Jalāl al-Dīn Muḥammad Rūmī
-</div>
 
 I can define them in `org-mode` as:
 
