@@ -1,0 +1,101 @@
+<!doctype html><html lang=en-us><head><title>Dynamic LLM system prompt - Cash Prokop-Weaver</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content='LLM performance improves with a good prompt. I&rsquo;ve found success by tailoring the prompt to the relevant domain (for example: role-prompting as a senior software engineer when asking a coding question). I use a local
+
+Qwen 3 0.6b through Ollama
+LLM to categorize each prompt and select the most appropriate system prompt.
+
+Select prompt
+#
+
+(defun strip-ansi-chars (str)
+  "Remove ansi escape characters from STR.
+Source: https://old.reddit.com/r/emacs/comments/18xaakz/remove_ansi_escape_sequences_from_shell_process/kgdr9zi/"
+  (let ((clean-str (ansi-color-apply str)))
+    (set-text-properties 0 (length clean-str) nil clean-str)
+    clean-str))
+
+(defun strip-ollama-progress-spinner (str)
+  "Return STR without ollama&#39;s progress spinner characters."
+  (replace-regexp-in-string "[⠙⠹⠸⠼⠴⠦⠧⠇⠋⠏]" "" str))
+
+(defun llm-prompts-select-prompt (&amp;optional prompt)
+  "Return appropriate llm system prompt for given PROMPT."
+  (message "Selecting best system prompt...")
+  (let*
+      ((prompt
+        (or prompt
+            (with-current-buffer (gptel--create-prompt-buffer (point))
+              (buffer-substring-no-properties (point-min) (point-max)))))
+       (response
+        (s-trim
+         (strip-ollama-progress-spinner
+          (strip-ansi-chars
+           (shell-command-to-string
+            (format
+             "ollama run qwen3:0.6b --hidethinking \"Determine whether the following text is related to programming and coding or not. Response with either &#39;code&#39; when the text is about programming and &#39;general&#39; otherwise.
+
+Example: Write a function in Python to add two numbers.
+Response: code
+
+Example: What are some useful patterns to utilize when writing documentation?
+Response: general
+
+Categorize this:
+
+%s\"" prompt)))))))
+    (cond
+     ((string= response "code")
+      (cashpw/log "Using code system prompt.")
+      llm-prompts-prompt--code)
+     (t
+      (cashpw/log "Using default system prompt.")
+      llm-prompts-prompt--default))))
+ '><link rel=canonical href=http://cashpw.com/posts/fd0e23cc-0610-41fd-a50a-b9fa6147b190/><link defer rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css crossorigin=anonymous referrerpolicy=no-referrer><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap"></noscript><link rel=stylesheet href=/css/hugo-tufte.min.css><link rel=stylesheet href=/css/hugo-tufte-options.min.css></head><body><article id=main><header class=brand><p class=site-title><a href=/>Cash Prokop-Weaver</a></p></header><section><h1 class=content-title>Dynamic LLM system prompt</h1><ul class=content-meta><li class=date><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25.0 012.25-2.25h13.5A2.25 2.25.0 0121 7.5v11.25m-18 0A2.25 2.25.0 005.25 21h13.5A2.25 2.25.0 0021 18.75m-18 0v-7.5A2.25 2.25.0 015.25 9h13.5A2.25 2.25.0 0121 11.25v7.5"/></svg>
+<time datetime=2025-12-31T12:55:00-0800>Dec 31, 2025</time></li><li class=date><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875.0 112.652 2.652L6.832 19.82a4.5 4.5.0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5.0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"/></svg>
+<time datetime=2025-12-31T13:03:00-0800>Dec 31, 2025</time></li><li>1 min</li></span></section><section><details class=toc closed><summary>Table of Contents</summary><nav id=TableOfContents><ul><li><a href=#select-prompt>Select prompt</a></li></ul></nav></details></section><section><p>LLM performance improves with a good prompt. I&rsquo;ve found success by tailoring the prompt to the relevant domain (for example: role-prompting as a senior software engineer when asking a coding question). I use a local<label for=sidenote-1 class="margin-toggle sidenote-number"></label>
+<input type=checkbox id=sidenote-1 class=margin-toggle>
+<span class=sidenote>Qwen 3 0.6b through Ollama</span>
+LLM to categorize each prompt and select the most appropriate <a href=/posts/1cef849d-6b85-445d-bc22-178f5f1458de/>system prompt</a>.</p><h2 id=select-prompt>Select prompt
+<a href=#select-prompt class=heading-anchor>#</a></h2><div class=highlight><pre tabindex=0 style=color:#cad3f5;background-color:#24273a;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-emacs-lisp data-lang=emacs-lisp><span style=display:flex><span>(<span style=color:#91d7e3>defun</span> <span style=color:#f4dbd6>strip-ansi-chars</span> (<span style=color:#f4dbd6>str</span>)
+</span></span><span style=display:flex><span>  <span style=color:#a6da95>&#34;Remove ansi escape characters from STR.
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Source: https://old.reddit.com/r/emacs/comments/18xaakz/remove_ansi_escape_sequences_from_shell_process/kgdr9zi/&#34;</span>
+</span></span><span style=display:flex><span>  (<span style=color:#91d7e3>let</span> ((<span style=color:#f4dbd6>clean-str</span> (<span style=color:#f4dbd6>ansi-color-apply</span> <span style=color:#f4dbd6>str</span>)))
+</span></span><span style=display:flex><span>    (<span style=color:#8aadf4>set-text-properties</span> <span style=color:#f5a97f>0</span> (<span style=color:#8aadf4>length</span> <span style=color:#f4dbd6>clean-str</span>) <span style=color:#eed49f>nil</span> <span style=color:#f4dbd6>clean-str</span>)
+</span></span><span style=display:flex><span>    <span style=color:#f4dbd6>clean-str</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>(<span style=color:#91d7e3>defun</span> <span style=color:#f4dbd6>strip-ollama-progress-spinner</span> (<span style=color:#f4dbd6>str</span>)
+</span></span><span style=display:flex><span>  <span style=color:#a6da95>&#34;Return STR without ollama&#39;s progress spinner characters.&#34;</span>
+</span></span><span style=display:flex><span>  (<span style=color:#f4dbd6>replace-regexp-in-string</span> <span style=color:#a6da95>&#34;[⠙⠹⠸⠼⠴⠦⠧⠇⠋⠏]&#34;</span> <span style=color:#a6da95>&#34;&#34;</span> <span style=color:#f4dbd6>str</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>(<span style=color:#91d7e3>defun</span> <span style=color:#f4dbd6>llm-prompts-select-prompt</span> (<span style=color:#c6a0f6>&amp;optional</span> <span style=color:#f4dbd6>prompt</span>)
+</span></span><span style=display:flex><span>  <span style=color:#a6da95>&#34;Return appropriate llm system prompt for given PROMPT.&#34;</span>
+</span></span><span style=display:flex><span>  (<span style=color:#8aadf4>message</span> <span style=color:#a6da95>&#34;Selecting best system prompt...&#34;</span>)
+</span></span><span style=display:flex><span>  (<span style=color:#91d7e3>let*</span>
+</span></span><span style=display:flex><span>      ((<span style=color:#f4dbd6>prompt</span>
+</span></span><span style=display:flex><span>        (<span style=color:#91d7e3>or</span> <span style=color:#f4dbd6>prompt</span>
+</span></span><span style=display:flex><span>            (<span style=color:#91d7e3>with-current-buffer</span> (<span style=color:#f4dbd6>gptel--create-prompt-buffer</span> (<span style=color:#8aadf4>point</span>))
+</span></span><span style=display:flex><span>              (<span style=color:#8aadf4>buffer-substring-no-properties</span> (<span style=color:#8aadf4>point-min</span>) (<span style=color:#8aadf4>point-max</span>)))))
+</span></span><span style=display:flex><span>       (<span style=color:#f4dbd6>response</span>
+</span></span><span style=display:flex><span>        (<span style=color:#f4dbd6>s-trim</span>
+</span></span><span style=display:flex><span>         (<span style=color:#f4dbd6>strip-ollama-progress-spinner</span>
+</span></span><span style=display:flex><span>          (<span style=color:#f4dbd6>strip-ansi-chars</span>
+</span></span><span style=display:flex><span>           (<span style=color:#f4dbd6>shell-command-to-string</span>
+</span></span><span style=display:flex><span>            (<span style=color:#8aadf4>format</span>
+</span></span><span style=display:flex><span>             <span style=color:#a6da95>&#34;ollama run qwen3:0.6b --hidethinking \&#34;Determine whether the following text is related to programming and coding or not. Response with either &#39;code&#39; when the text is about programming and &#39;general&#39; otherwise.
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Example: Write a function in Python to add two numbers.
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Response: code
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Example: What are some useful patterns to utilize when writing documentation?
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Response: general
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>Categorize this:
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>
+</span></span></span><span style=display:flex><span><span style=color:#a6da95>%s\&#34;&#34;</span> <span style=color:#f4dbd6>prompt</span>)))))))
+</span></span><span style=display:flex><span>    (<span style=color:#91d7e3>cond</span>
+</span></span><span style=display:flex><span>     ((<span style=color:#f4dbd6>string=</span> <span style=color:#f4dbd6>response</span> <span style=color:#a6da95>&#34;code&#34;</span>)
+</span></span><span style=display:flex><span>      (<span style=color:#f4dbd6>cashpw/log</span> <span style=color:#a6da95>&#34;Using code system prompt.&#34;</span>)
+</span></span><span style=display:flex><span>      <span style=color:#f4dbd6>llm-prompts-prompt--code</span>)
+</span></span><span style=display:flex><span>     (<span style=color:#eed49f>t</span>
+</span></span><span style=display:flex><span>      (<span style=color:#f4dbd6>cashpw/log</span> <span style=color:#a6da95>&#34;Using default system prompt.&#34;</span>)
+</span></span><span style=display:flex><span>      <span style=color:#f4dbd6>llm-prompts-prompt--default</span>))))
+</span></span></code></pre></div></section><section><footer class=page-footer><ul class=page-footer-menu></ul></footer></section></article></body></html>
