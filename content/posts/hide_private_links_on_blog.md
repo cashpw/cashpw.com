@@ -2,14 +2,17 @@
 title = "Hide private links in blog posts"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-27T07:08:00-08:00
-lastmod = 2025-12-17T22:06:00-08:00
+lastmod = 2025-12-25T07:52:00-08:00
 draft = false
 slug = "3643c979-736a-408e-9122-0cc8aea2ca85"
 +++
 
-I publish a subset of my notes which I manually mark with a `public` file tag. Sometimes published notes have links to private, unpublished, notes and by default these would all be Hugo errors or, if we [bypass](https://gohugo.io/configuration/all/#reflinkserrorlevel) that check, a `404`. I'd like these links to not be links and instead be plain text.
+I publish a [subset]({{< relref "notes_should_be_private_by_default.md" >}}) of my notes which I manually mark with a `public` file tag. Sometimes published notes have links to private, unpublished, notes and by default these would all be Hugo errors or, if we [bypass](https://gohugo.io/configuration/all/#reflinkserrorlevel) that check, a `404`. I'd like these links to not be links and instead be plain text.
 
 For example: "This is a [private link](http://example.com)" in my notes should be rendered as "This is a private link" on the blog.
+
+
+## Solution: Wrap `org-hugo-link` {#solution-wrap-org-hugo-link}
 
 My solution was to wrap the `org-hugo-link` function and conditionally return a non-link string.
 
@@ -59,9 +62,9 @@ Is rendered as:
 </ul>
 ```
 
-We got something! The hex converts to \`HAHA HUGOSHORTCODE2s0 HBHB\`{{< sidenote >}}Without spaces.{{< /sidenote >}}which corresponds to a [shortcode](https://github.com/gohugoio/hugo/blob/0de8f8607bff16308fbb28816c6e2571c7846d2d/hugolib/shortcode.go#L193) which is later [expanded](https://github.com/gohugoio/hugo/blob/0de8f8607bff16308fbb28816c6e2571c7846d2d/hugolib/shortcode.go#L737) into a link.
+We got something! The hex converts to =HAHA HUGOSHORTCODE2s0 HBHB={{< sidenote >}}Without spaces.{{< /sidenote >}}which corresponds to a [shortcode](https://github.com/gohugoio/hugo/blob/0de8f8607bff16308fbb28816c6e2571c7846d2d/hugolib/shortcode.go#L193) which is later [expanded](https://github.com/gohugoio/hugo/blob/0de8f8607bff16308fbb28816c6e2571c7846d2d/hugolib/shortcode.go#L737) into a link.
 
-As far as I can tell, \`render-link.html\` is at the wrong stage in the rendering pipeline to do what I'm trying to do. The links are only shortcodes at this point and there's no telling whether or not the shortcode is a valid link.
+As far as I can tell, `render-link.html` is at the wrong stage in the rendering pipeline to do what I'm trying to do. The links are only shortcodes at this point and there's no telling whether or not the shortcode is a valid link.
 
 Perhaps there's a way to get around this in Hugo. I opted to move up a layer and strip the links out my markdown files.
 
