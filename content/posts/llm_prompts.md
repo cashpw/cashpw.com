@@ -2,7 +2,7 @@
 title = "LLM prompts"
 author = ["Cash Prokop-Weaver"]
 date = 2025-12-31T13:02:00-08:00
-lastmod = 2025-12-31T13:05:00-08:00
+lastmod = 2026-01-05T10:21:00-08:00
 draft = false
 slug = "1cef849d-6b85-445d-bc22-178f5f1458de"
 +++
