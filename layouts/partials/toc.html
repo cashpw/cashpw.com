@@ -1,0 +1,24 @@
+{{- if .Page.Fragments.Headings }}
+  {{- if or (.Params.toc) (.Site.Params.toc) }}
+    {{ $ignoredHeadings := slice "Bibliography" "Backlinks" }}
+    {{ $showTOC := false }}
+    {{ if .Fragments.Headings }}
+        {{ range .Fragments.Headings }}
+          {{ range .Headings }}
+              {{ if not (in $ignoredHeadings .Title) }}
+                  {{ $showTOC = true }}
+              {{ end }}
+          {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{- if $showTOC -}}
+      <section>
+        <details class="toc" closed>
+          <summary>Table of Contents</summary>
+          {{ .TableOfContents }}
+        </details>
+      </section>
+    {{- end }}
+  {{- end }}
+{{- end }}
