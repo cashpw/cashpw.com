@@ -31,3 +31,4 @@ Related: [Personal knowledge management]({{< relref "personal_knowledge_manageme
 
 -   [Andy Matuschak]({{< relref "andy_matuschak.md" >}})
 -   [Examples of Zettelkasten Notes]({{< relref "examples_of_zettelkasten_notes.md" >}})
+-   [Style guide: Writing]({{< relref "writing_style_guide.md" >}})
