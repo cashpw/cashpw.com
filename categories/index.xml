@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Cash Prokop-Weaver</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Dec 2025 21:32:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 21:15:00 -0800</lastBuildDate>
     <atom:link href="http://cashpw.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project</title>
@@ -20,6 +20,20 @@
       <link>http://cashpw.com/categories/reference/</link>
       <pubDate>Thu, 03 Aug 2023 08:07:00 -0700</pubDate>
       <guid>http://cashpw.com/categories/reference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quote</title>
+      <link>http://cashpw.com/categories/quote/</link>
+      <pubDate>Mon, 07 Feb 2022 17:05:00 -0800</pubDate>
+      <guid>http://cashpw.com/categories/quote/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meta</title>
+      <link>http://cashpw.com/categories/meta/</link>
+      <pubDate>Sat, 05 Feb 2022 13:12:00 -0800</pubDate>
+      <guid>http://cashpw.com/categories/meta/</guid>
       <description></description>
     </item>
   </channel>
