@@ -2,7 +2,7 @@
 title = "Blog"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-22T11:22:00-08:00
-lastmod = 2026-01-05T09:15:00-08:00
+lastmod = 2026-01-05T13:17:00-08:00
 tags = ["project"]
 categories = ["project"]
 draft = false
@@ -145,6 +145,23 @@ A beginning is the time for taking the most delicate care that the balances are 
      (`md (s-join "\n" (--map (format "> %s" it) split-content)))
      (`markdown (s-join "\n" (--map (format "> %s" it) split-content)))
      (_ (s-join "\n" split-content)))))
+```
+
+
+### Full-width {#full-width}
+
+Content width is limited, by default, to allow for footnotes to appear floating{{< sidenote >}}Like this!{{< /sidenote >}}. However, sometimes we want a full-width section. Set this with the `fullwidth` CSS class.
+
+{{< figure src="/ox-hugo/2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg" caption="<span class=\"figure-number\">Figure 1: </span>_The Long Cloud_ (Frederick Sound) by Mark Galer" class="fullwidth" >}}
+
+_The Long Cloud_ (Frederick Sound) by Mark Galer.
+
+I can set the CSS class in `org-mode`:
+
+```org
+#+attr_html: :class fullwidth
+#+caption: /The Long Cloud/ (Frederick Sound) by Mark Galer
+[[file:2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg]]
 ```
 
 

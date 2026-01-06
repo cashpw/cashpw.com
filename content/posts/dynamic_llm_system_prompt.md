@@ -2,7 +2,7 @@
 title = "Dynamic LLM system prompt"
 author = ["Cash Prokop-Weaver"]
 date = 2025-12-31T12:55:00-08:00
-lastmod = 2025-12-31T13:03:00-08:00
+lastmod = 2026-01-05T20:02:00-08:00
 draft = false
 slug = "fd0e23cc-0610-41fd-a50a-b9fa6147b190"
 +++

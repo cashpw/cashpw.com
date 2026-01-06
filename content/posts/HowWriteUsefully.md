@@ -2,7 +2,7 @@
 title = "Paul Graham | How to Write Usefully"
 author = ["Cash Prokop-Weaver"]
 date = 2022-02-06T17:42:00-08:00
-lastmod = 2026-01-04T21:04:00-08:00
+lastmod = 2026-01-05T13:38:00-08:00
 tags = ["reference"]
 categories = ["reference"]
 draft = false
