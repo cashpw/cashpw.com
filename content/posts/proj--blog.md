@@ -2,7 +2,7 @@
 title = "Blog"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-22T11:22:00-08:00
-lastmod = 2026-01-05T13:17:00-08:00
+lastmod = 2026-01-07T22:33:00-08:00
 tags = ["project"]
 categories = ["project"]
 draft = false
