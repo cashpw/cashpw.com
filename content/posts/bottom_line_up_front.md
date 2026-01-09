@@ -21,5 +21,4 @@ slug = "06a9a5fb-36db-42f7-841d-96f365aad3e7"
 
 ## Backlinks {#backlinks}
 
--   [AKA]({{< relref "bottom_line_up_front.md#aka" >}})
 -   [Style guide: Writing]({{< relref "writing_style_guide.md" >}})

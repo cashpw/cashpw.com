@@ -31,5 +31,4 @@ slug = "d077ef5b-766b-4239-a40f-f775e101e185"
 
 ## Backlinks {#backlinks}
 
--   [Describe]({{< relref "write_prolifically_write_succinctly.md#describe" >}})
 -   [Style guide: Writing]({{< relref "writing_style_guide.md" >}})

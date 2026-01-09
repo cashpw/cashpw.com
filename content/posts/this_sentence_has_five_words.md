@@ -27,5 +27,4 @@ slug = "3e310bff-729b-429b-9e10-769422c75561"
 
 ## Backlinks {#backlinks}
 
--   [Describe]({{< relref "this_sentence_has_five_words.md#describe" >}})
 -   [Style guide: Writing]({{< relref "writing_style_guide.md" >}})

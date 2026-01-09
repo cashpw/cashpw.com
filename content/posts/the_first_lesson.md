@@ -27,5 +27,4 @@ Related: Pedagogy, Growth mindset, Fixed mindset.
 
 ## Backlinks {#backlinks}
 
--   [Normal]({{< relref "the_first_lesson.md#normal" >}})
 -   [Style guide: Writing]({{< relref "writing_style_guide.md" >}})
