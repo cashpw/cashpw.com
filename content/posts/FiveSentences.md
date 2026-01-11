@@ -2,7 +2,7 @@
 title = "Limit emails to five sentences"
 author = ["Cash Prokop-Weaver"]
 date = 2022-02-15T13:21:00-08:00
-lastmod = 2026-01-04T21:03:00-08:00
+lastmod = 2026-01-10T12:19:00-08:00
 tags = ["reference"]
 categories = ["reference"]
 draft = false

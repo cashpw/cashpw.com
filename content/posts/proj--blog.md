@@ -2,7 +2,7 @@
 title = "Blog"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-22T11:22:00-08:00
-lastmod = 2026-01-07T22:33:00-08:00
+lastmod = 2026-01-10T15:46:00-08:00
 tags = ["project"]
 categories = ["project"]
 draft = false
@@ -74,7 +74,7 @@ I enjoy the `sidenote` feature{{< sidenote >}}Further discussion on [scottstuff.
                      content)))))
       (goto-char (point-min))
       (let ((case-fold-search t)) ;; Case insensitive
-        (when (re-search-forward "^\\* Footnotes" nil t)
+        (when (re-search-forward "^\\*+ Footnotes" nil t)
           (org-back-to-heading)
           (org-cut-subtree))))))
 ```
@@ -99,6 +99,23 @@ Jalāl al-Dīn Muḥammad Rūmī
 ```
 
 
+### Full-width {#full-width}
+
+Content width is limited, by default, to allow for footnotes to appear floating{{< sidenote >}}Like this!{{< /sidenote >}}. However, sometimes we want a full-width section. Set this with the `fullwidth` CSS class.
+
+{{< figure src="/ox-hugo/2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg" caption="<span class=\"figure-number\">Figure 1: </span>_The Long Cloud_ (Frederick Sound) by Mark Galer" class="fullwidth" >}}
+
+_The Long Cloud_ (Frederick Sound) by Mark Galer.
+
+I can set the CSS class in `org-mode`:
+
+```org
+#+attr_html: :class fullwidth
+#+caption: /The Long Cloud/ (Frederick Sound) by Mark Galer
+[[file:2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg]]
+```
+
+
 ### Epigraphs {#epigraphs}
 
 Epigraphs are fancy blockquotes:
@@ -115,7 +132,7 @@ A beginning is the time for taking the most delicate care that the balances are 
 
 ```emacs-lisp
 ;; https://github.com/cashpw/org-defblock
-(require 'org-defblock)
+;; (require 'org-defblock)
 
 (org-defblock
  epigraph (author nil cite nil detail nil)
@@ -148,20 +165,88 @@ A beginning is the time for taking the most delicate care that the balances are 
 ```
 
 
-### Full-width {#full-width}
+### Backlinks {#backlinks}
 
-Content width is limited, by default, to allow for footnotes to appear floating{{< sidenote >}}Like this!{{< /sidenote >}}. However, sometimes we want a full-width section. Set this with the `fullwidth` CSS class.
+The following adds the "Backlinks" heading and populates it with (public) notes which link to the current note.
 
-{{< figure src="/ox-hugo/2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg" caption="<span class=\"figure-number\">Figure 1: </span>_The Long Cloud_ (Frederick Sound) by Mark Galer" class="fullwidth" >}}
+```emacs-lisp
+(defun cashpw/org-roam-get-public-backlinks-for-current-node ()
+  "Return unique list of `org-roam-node's which link back to current node."
+  (when (org-roam-file-p)
+    (let ((-compare-fn
+           ;; For -uniq
+           (lambda (a b)
+             (string=
+              (org-roam-node-id (org-roam-backlink-source-node a))
+              (org-roam-node-id (org-roam-backlink-source-node b))))))
+      (-uniq
+       (--filter
+        (let ((source-node (org-roam-backlink-source-node it)))
+          (and
+           ;; Remove flashcards
+           (not (assoc "FC_ALGO" (org-roam-node-properties source-node)))
+           ;; Remove non-public nodes
+           (member "public" (org-roam-node-tags source-node))))
+        (org-mem-roamy-mk-backlinks (org-roam-node-at-point)))))))
 
-_The Long Cloud_ (Frederick Sound) by Mark Galer.
+(defun cashpw/org-roam--export-backlinks (backend)
+  "Add backlinks to roam buffer for export; see `org-export-before-processing-hook'."
+  (pcase backend
+    ('hugo
+     (when (org-roam-file-p)
+       (let*
+           ((backlinks
+             (--sort
+              ;; Alpha sort, descending
+              (string<
+               (org-roam-node-title (org-roam-backlink-source-node it))
+               (org-roam-node-title (org-roam-backlink-source-node other)))
+              (cashpw/org-roam-get-public-backlinks-for-current-node)))
+            (backlinks-as-string
+             (--reduce-from
+              (let* ((source-node (org-roam-backlink-source-node it))
+                     (id (org-roam-node-id source-node))
+                     (file (org-roam-node-file source-node))
+                     (title (org-roam-node-title source-node)))
+                (concat acc (s-lex-format "- [[id:${id}][${title}]]\n")))
+              "" backlinks)))
+         (unless (string-empty-p backlinks-as-string)
+           (save-excursion
+             (goto-char (point-max))
+             (insert (concat "\n* Backlinks\n" backlinks-as-string)))))))
+    (_ nil)))
 
-I can set the CSS class in `org-mode`:
+(add-hook!
+ 'org-export-before-processing-hook 'cashpw/org-roam--export-backlinks)
+```
 
-```org
-#+attr_html: :class fullwidth
-#+caption: /The Long Cloud/ (Frederick Sound) by Mark Galer
-[[file:2025-01-04_20-00-24_31940527503_8b73d0ecaf_o_d.jpg]]
+
+### Citations {#citations}
+
+I have dedicated notes for some citations and prefer to replace the usual bibliography citation with links to those notes.
+
+```emacs-lisp
+(defun cashpw/org-roam--replace-citations-with-id-links (backend)
+  "Replace [cite:@key] with [[id:ID][Title]] in current buffer if they're public."
+  (pcase backend
+    ('hugo
+     (save-excursion
+       (goto-char (point-min))
+       ;; Search for the pattern [cite:@foo] and capturing "foo".
+       (while (re-search-forward "\\[cite:@\\([^]]+\\)\\]" nil t)
+         (when-let ((entry
+                     (org-mem-entry-by-roam-ref (concat "@" (match-string 1)))))
+           (when (member "public" (org-mem-entry-tags entry))
+             (let ((id (org-mem-entry-id entry)))
+               (unless (save-match-data (string= (org-roam-id-at-point) id))
+                 (replace-match (org-link-make-string
+                                 (format "id:%s" id) (org-mem-entry-title entry))
+                                'fixedcase 'literal))))))))
+    (_ nil)))
+
+(add-hook!
+ 'org-export-before-processing-hook
+ 'cashpw/org-roam--replace-citations-with-id-links)
 ```
 
 
