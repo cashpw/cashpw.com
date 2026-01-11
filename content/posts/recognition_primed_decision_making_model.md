@@ -2,7 +2,7 @@
 title = "Recognition-primed decision"
 author = ["Cash Prokop-Weaver"]
 date = 2023-06-30T19:44:00-07:00
-lastmod = 2026-01-10T22:44:00-08:00
+lastmod = 2026-01-10T23:29:00-08:00
 draft = false
 slug = "4a42aa6f-413f-4144-86df-5c0f0b174777"
 +++
@@ -11,14 +11,12 @@ slug = "4a42aa6f-413f-4144-86df-5c0f0b174777"
 >
 > (<a href="#citeproc_bib_item_2">“Recognition-Primed Decision” 2023</a>)
 
-In general, it's a pattern-matching exercise (see [Cedric Chin | Expertise Is 'Just' Pattern Matching]({{< relref "chinExpertiseJustPatternMatching2020.md" >}})): recognize the situation at hand and choose the best already-known course of action. This presupposes that you (1) can recognize the situation and (2) know the right course of action. If either supposition is false, then refer to the flow chart:
+In general, it's a pattern-matching exercise (see [Cedric Chin | Expertise Is 'Just' Pattern Matching]({{< relref "chinExpertiseJustPatternMatching2020.md" >}})): recognize the situation at hand and choose the best already-known course of action. This presupposes that you (1) can recognize the situation and (2) know the right course of action. If either supposition is false, then refer to the flow chart(<a href="#citeproc_bib_item_1">Chin 2020</a>):
 
-> {{< figure src="/ox-hugo/2023-07-30_06-27-34_Paper.Commonplace.41.png" >}}
->
-> (<a href="#citeproc_bib_item_1">Chin 2020</a>)
+{{< figure src="/ox-hugo/2023-07-30_06-27-34_Paper.Commonplace.41.png" >}}
 
 
-## How to improve at [Recognition-primed decision]({{< relref "recognition_primed_decision_making_model.md" >}}) making? {#how-to-improve-at-recognition-primed-decision--recognition-primed-decision-making-model-dot-md--making}
+## How to improve at Recognition-primed decision making? {#how-to-improve-at-recognition-primed-decision-making}
 
 > 1.  Systematically Expand the Set of Prototypes You Have
 >
@@ -118,4 +116,3 @@ In general, it's a pattern-matching exercise (see [Cedric Chin | Expertise Is 'J
 
 -   [Cedric Chin | Expertise Is 'Just' Pattern Matching]({{< relref "chinExpertiseJustPatternMatching2020.md" >}})
 -   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})
--   [How to improve at Recognition-primed decision making?](#how-to-improve-at-recognition-primed-decision--recognition-primed-decision-making-model-dot-md--making)

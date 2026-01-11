@@ -18,7 +18,7 @@ What's the most effective way to acquire explicit and tacit knowledge? The answe
 
 Related:
 
--   [How to improve at Recognition-primed decision making?]({{< relref "recognition_primed_decision_making_model.md#how-to-improve-at-id-4a42aa6f-413f-4144-86df-5c0f0b174777-recognition-primed-decision-making" >}})
+-   [How to improve at Recognition-primed decision making?]({{< relref "recognition_primed_decision_making_model.md#how-to-improve-at-recognition-primed-decision-making" >}})
 -   [Applied cognitive task analysis]({{< relref "applied_cognitive_task_analysis.md" >}}) to extract expertise
 
 
