@@ -125,3 +125,8 @@ This reads similarly to me as saying that someone should recover without crutche
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>“Smart Guy Productivity Pitfalls.” n.d. Accessed December 20, 2022. <a href="http://bookofhook.blogspot.com/2013/03/smart-guy-productivity-pitfalls.html">http://bookofhook.blogspot.com/2013/03/smart-guy-productivity-pitfalls.html</a>.</div>
 </div>
+
+
+## Backlinks {#backlinks}
+
+-   [Work smart and hard]({{< relref "work_smart_and_hard.md" >}})

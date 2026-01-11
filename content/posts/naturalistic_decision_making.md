@@ -21,5 +21,4 @@ slug = "6eb374ad-69aa-476d-b1d8-02714ffc094f"
 
 ## Backlinks {#backlinks}
 
--   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})
 -   [How to improve at Recognition-primed decision making?]({{< relref "recognition_primed_decision_making_model.md#how-to-improve-at-id-4a42aa6f-413f-4144-86df-5c0f0b174777-recognition-primed-decision-making" >}})

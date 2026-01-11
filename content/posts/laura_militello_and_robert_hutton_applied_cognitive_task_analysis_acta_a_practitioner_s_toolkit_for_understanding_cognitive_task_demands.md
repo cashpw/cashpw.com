@@ -1,74 +1,69 @@
 +++
-title = "Applied cognitive task analysis"
-author = ["Cash Prokop-Weaver"]
-date = 2023-09-08T15:18:00-07:00
-lastmod = 2026-01-10T23:17:00-08:00
+title = "Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands"
+author = ["Cash Weaver"]
+date = 2023-09-08T15:14:00-07:00
+lastmod = 2026-01-10T23:16:00-08:00
+tags = ["reference"]
+categories = ["reference"]
 draft = false
-slug = "31152f53-1769-454c-be11-643a5405eb5d"
+slug = "d8ab213e-9bd6-4669-a2b1-b931b56f5930"
 +++
 
-Applied cognitive task analysis, as outlined in [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}}), is a technique for extracting expertise which is simpler than Cognitive task analysis. There are four steps:
-
-1.  Create a [Task diagram](#task-diagram)
-    1.  Ask the subject matter expert to decompose the task in to steps, or subtasks, into 3-6{{< sidenote >}}"The interviewer limits the SME to between three and six steps, to ensure that time is not wasted delving into minute detail during the surface-level interview." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}}){{< /sidenote >}}steps
-
-        "Think about what you do when you perform &lt;task of interest&gt;. Can you break this down into less than six, but more than three steps?" (<a href="#citeproc_bib_item_1">Chin 2021</a>)
-
-    2.  Ask the subject matter expert to identify the more complex or cognitively demanding steps
-
-        "Of the steps you have just identified, which require difficult cognitive skills? By cognitive skills I mean: judgments, assessments, and problem solving-thinking skills." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-    3.  Circle those steps; you'll be focusing on them during the next two techniques.
-
-2.  Perform [Knowledge audits](#knowledge-audit)
-    1.  Converse with / Interview the subject matter expert using the [Task diagram](#task-diagram) as a guide for _what_ to ask about and the [probes](#knowledge-audit-probes) as a guide for _how_ to ask
-
-    2.  Aggregate the results of several such interviews into a knowledge audit table (see example below)
-
-3.  Perform [Simulation interviews](#simulation-interview)
-    1.  Present the subject matter expert with a challenging scenario ([Choosing good simulations](#choosing-good-simulations))
-
-        "As you experience this simulation, imagine you are the (job you are investigating) in the incident. Afterwards, I am going to ask you a series of questions about how you would think and act in this situation." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-    2.  Ask them to "identify major events, including judgements and decisions" [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}}) and [probe](#simulation-interview-probes) each event for "situation assessment, actions, critical cues, and potential errors surrounding that event" [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-    3.  Aggregate their answers into a simulation interview table. "Using the same simulation for interviews with multiple SMEs can provide insight into situations in which more than one action would be acceptable, and alternative assessments of the same situation are plausible." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-4.  Construct a [Cognitive demands table](#cognitive-demands-table)
+Laura Militello, Robert Hutton, (<a href="#citeproc_bib_item_1">Militello and Hutton 1998</a>)
 
 
-## Task diagram {#task-diagram}
+## Summary {#summary}
 
-> The goal when creating a task diagram is to set up the knowledge audit and the simulation interview. You want a big-picture overview of the most cognitively demanding parts of the task, so that you may focus the majority of your time on those parts.
+[Applied cognitive task analysis]({{< relref "applied_cognitive_task_analysis.md" >}})
+
+
+## Thoughts {#thoughts}
+
+
+## Notes {#notes}
+
+
+### Abstract {#abstract}
+
+> Cognitive task analysis (CTA) is a set of methods for identifying cognitive skills, or mental demands, needed to perform a task proficiently. The product of the task analysis can be used to inform the design of interfaces and training systems. However, CTA is resource intensive and has previously been of limited use to design practitioners. A streamlined method of CTA, Applied Cognitive Task Analysis (ACTA), is presented in this paper. ACTA consists of three interview methods that help the practitioner to extract information about the cognitive demands and skills required for a task. ACTA also allows the practitioner to represent this information in a format that will translate more directly into applied products, such as improved training scenarios or interface recommendations. This paper will describe the three methods, an evaluation study conducted to assess the usability and usefulness of the methods, and some directions for future research for making cognitive task analysis accessible to practitioners. ACTA techniques were found to be easy to use, flexible, and to provide clear output. The information and training materials developed based on ACTA interviews were found to be accurate and important for training purposes.
+
+
+### Introduction {#introduction}
+
+> As task analytic techniques have become more sophisticated, focusing on cognitive activities as well as behaviours, they have become less accessible to practitioners. This paper introduces Applied Cognitive Task Analysis (ACTA), a set of streamlined cognitive task an alysis tools that have been developed specifically for use by professionals who have not been trained in cognitive psychology, but who do develop ap plications that can benefit from the use of cognitive task analysis.
+
+
+### Applied cognitive task analysis {#applied-cognitive-task-analysis}
+
+> The goal of this project was to develop and evaluate techniques that would enable instructional designers and systems designers to elicit critical cognitive elements from Subject Matter Experts (SMEs). The techniques presented here are intended to be complementary; each is designed to get at different aspects of cognitive skill.
 >
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
+> 1.  The first technique, the task diagram interview, provides the interviewer with a broad overview of the task and highlights the difficult cognitive portions of the task to be probed further with in-depth interviews.
+> 2.  The second technique, the knowledge audit, surveys the aspects of expertise required for a specific task or subtask. As each aspect of expertise is uncovered, it is probed for concrete examples in the context of the job, cues and strategies used, and why it presents a challenge to inexperienced people.
+> 3.  The third technique, the simulation interview, allows the interviewer to probe the cognitive processes of the SMEs within the context of a specific scenario. The use of a simulation or scenario provides job context that is difficult to obtain via the other interview techniques, and therefore allows additional probing around issues such as situation assessment, how situation assessment impacts a course of action, and potential errors that a novice would be likely to make given the same situation.
+> 4.  Finally, a cognitive demands table is offered as a means to consolidate and synthesize the data, so that it can be directly applied to a specific project.
+>
+> [formatting mine]
 
 
-### Example: Task diagram {#example-task-diagram}
+#### Task diagram {#task-diagram}
 
+> The task diagram elicits a broad overview of the task and identifies the difficult cognitive elements. Although this preliminary interview offers only a surface-level view of the cognitive elements of the task, it enables the interviewer to focus the more in-depth interviews (i.e. the knowledge audit and simulation interviews) so that time and resources can be spent unpacking the most difficult and relevant of those cognitive elements.
+>
+> The subject matter expert is asked to decompose the task into steps or subtasks with a question such as, \`Think about what you do when you (task of interest). Can you break this task down into less than six, but more than three steps?' The goal is to get the expert to walk through the task in his / her mind, verbalizing major steps. The interviewer limits the SME to between three and six steps, to ensure that time is not wasted delving into minute detail during the surface-level interview. After the steps of the task have been articulated, the SME is asked to identify which of the steps require cognitive skill, with a question such as, \`Of the steps you have just identified which require difficult cognitive skills? By cognitive skills I mean judgements, assessments, problem solving ± thinking skills'. The resulting diagram (figure 1) serves as a road map for future interviews, providing an overview of the major steps involved in the task and the sequence in which the steps are carried out, as well as which of the steps require the most cognitive skill.
+>
+> The task diagram interview is intended to provide a surface-level look at the task, and does not attempt to unpack the mental model of each SME. The goal is to elicit a very broad overview of the task.
+>
 > {{< figure src="/ox-hugo/acta-figure-1.png" >}}
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
 
 
-## Knowledge audit {#knowledge-audit}
-
-> The knowledge audit identifies ways in which expertise has been used in a domain, and surfaces examples based on the expert's real world experiences. The goal here is to capture the most important aspects of expertise.
->
-> You start out with a list of basic probes. These probes are drawn from the knowledge categories that most commonly characterise expertise. After a handful of interviews, it should become clear to you which probes produce the most information for that specific subtask; you may then reduce the time you spend on less useful questions.
-> (<a href="#citeproc_bib_item_1">Chin 2021</a>)
-
-<!--quoteend-->
+#### Knowledge audit {#knowledge-audit}
 
 > The knowledge audit identifies ways in which expertise is used in a domain and provides examples based on actual experience. [...]
 >
-> The list of probes is the starting point for conducting this interview. Then, the interviewer asks for specifics about the example in terms of critical cues and strategies of decision making. This is followed by a discussion of potential errors that a novice, less-experienced person might have made in this situation.
+> The knowledge audit employs a set of probes designed to describe types of domain knowledge or skill and elicit appropriate examples (figure 2). The goal is not simply to find out whether each component is present in the task, but to find out the nature of these skills, specific events where they were required, strategies that have been used, and so forth. The list of probes is the starting point for conducting this interview. Then, the interviewer asks for specifics about the example in terms of critical cues and strategies of decision making. This is followed by a discussion of potential errors that a novice, less-experienced person might have made in this situation.
 >
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-
-### Knowledge audit probes {#knowledge-audit-probes}
-
+> [...]
+>
 > Basic probes:
 >
 > -   **Past &amp; Future**
@@ -114,14 +109,11 @@ Applied cognitive task analysis, as outlined in [Laura Militello and Robert Hutt
 >     Equipment can sometimes mislead. Novices usually believe whatever the equipment tells them; they don't know when to be skeptical.
 >
 >     _Have there been times when the equipment pointed in one direction, but your own judgment told you to do something else? Or when you had to rely on experience to avoid being led astray by the equipment?_
+
+<!--quoteend-->
+
+> Table 1. Example of a knowledge audit table.
 >
-> [formatting mine]
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-
-### Example: Knowledge audit table {#example-knowledge-audit-table}
-
 > | Aspects of expertise                                                                                         | Cues and strategies                                                                                                                                                                               | Why difficult?                                                                                                                                                            |
 > |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | Past and future; e.g. Explosions in office strip --- search the office areas rather than source of explosion | Material safety data sheets (MSDS) tells you that explosion in area of dangerous chemicals and information about chemicals. Start where most likely to find victims and own safety considerations | Novice would be trained to start at source and work out. May not look at MSDS, to find potential source of explosion, and account for where people are most likely to be. |
@@ -129,11 +121,9 @@ Applied cognitive task analysis, as outlined in [Laura Militello and Robert Hutt
 > | Noticing; breathing sounds of victims                                                                        | Both you and your partner stop, hold your breath, and listen. Listen for crying, talking to themselves, victims knocking things over.                                                             | Noise from own breathing in apparatus, fire noises. Don't know what kinds of sounds to listen for.                                                                        |
 >
 > [formatting mine]
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
 
 
-## Simulation interview {#simulation-interview}
+#### Simulation interview {#simulation-interview}
 
 > The simulation interview allows the interviewer to better understand the SME's cognitive processes within the context of an incident. [...]
 >
@@ -142,11 +132,8 @@ Applied cognitive task analysis, as outlined in [Laura Militello and Robert Hutt
 > After exposure to the simulation, the SME is asked to identify major events, including judgements and decisions, with a question such as, \`As you experience this simulation, imagine you are the (job you are investigating) in the incident. Afterwards, I am going to ask you a series of questions about how you would think and act in this situation'. Each event is probed for situation assessment, actions, critical cues, and potential errors surrounding that event (figure 3).
 >
 > Information elicited is recorded in the simulation interview table (table 2). Using the same simulation for interviews with multiple SMEs can provide insight into situations in which more than one action would be acceptable, and alternative assessments of the same situation are plausible. This technique can be used to highlight differing SME perspectives, which is important information for developing training and system design recommendations. The technique can also be used to contrast expert and novice perspectives by conducting interviews with people of differing levels of expertise using the same simulation.
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
 
-
-### Simulation interview probes {#simulation-interview-probes}
+<!--quoteend-->
 
 > Figure 3. Simulation interview probes
 >
@@ -156,66 +143,37 @@ Applied cognitive task analysis, as outlined in [Laura Militello and Robert Hutt
 > -   What do you think is going on here? What is your assessment at this point in time?
 > -   What pieces of information led you to this situation assessment and these actions?
 > -   What errors would an inexperienced person be likely to make in this situation?
+
+<!--quoteend-->
+
+> Table 2. Example of a simulation interview table.
 >
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
-
-
-### Example: Simulation interview table {#example-simulation-interview-table}
-
 > | Events           | Actions                                                                                                                                                                       | Assessment                                                               | Critical cues                                                                                                                                                                                            | Potential errors                                                                                      |
 > |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 > | On-scene arrival | (1) Account for people (names), (2) Ask neighbors (but don't take their word for it, check it out yourself), (3) must knock on or knock down to make sure people aren't there | It's a cold night, need to find place for people who have been evacuated | (1) Night time, (2) cold -&gt; 15°, (3) Dead space, (4) Add on floor, (5), Poor materials wood (punk board), metal girders (buckle and break under fire), (6) common attack in whole building            | Not keeping track of people (could be looking for people who are not there)                           |
 > | Initial attack   | (1) Watch for signs of building collapse, (2) if signs of building collapse, evacuate and throw water on it from outside                                                      | Faulty construction, building may collapse                               | (1) Signs of building collapse include: What walls are doing: cracking; What floors are doing: groaning; What metal girders are doing: clicking, popping, (2) cable in old buildings hold walls together | Ventilating the attack, this draws the fire up and spreads it through the pipes and electrical system |
 >
 > [formatting mine]
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
 
 
-### Choosing good simulations {#choosing-good-simulations}
+#### Cognitive demands table {#cognitive-demands-table}
 
-> Of the four techniques in ACTA, picking a good simulation seems like the trickiest part of the methodology.
->
-> (<a href="#citeproc_bib_item_1">Chin 2021</a>)
-
--   Prefer scenarios which already exist; "Often, simulations and scenarios exist for training purposes. It may be necessary to adapt or modify the scenario to conform to practical constraints such as time limitations." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
--   "[...] the fidelity of the simulation is not an important issue. The key is that the simulation presents a challenging scenario." [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
--   Be wary of Wicked environments
-
-
-## Cognitive demands table {#cognitive-demands-table}
-
-The cognitive demands table is a reader-friendly presentation of the data you've collected in the preceding three steps.
-
-> After conducting ACTA interviews with multiple SMEs, the authors recommend the use of a cognitive demands table (table 3) to sort through and analyse the data. Clearly, not every bit of information discussed in an interview will be relevant for the goals of a specific project. [...] The table also helps the practitioner see common themes in the data, as well as conflicting information given by multiple SMEs.
-
-
-### Example: Cognitive demands table {#example-cognitive-demands-table}
-
-> The authors offer sample headings for the table based on analyses that they have conducted in the past (difficult cognitive element, why difficult, comm on errors, and cues and strategies used), but recommend that practitioners focus on the types of information that they will need to develop a new course or design a new system.
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
+> After conducting ACTA interviews with multiple SMEs, the authors recommend the use of a cognitive demands table (table 3) to sort through and analyse the data. Clearly, not every bit of information discussed in an interview will be relevant for the goals of a specific project. The cognitive demands table is intended to provide a format for the practitioner to use in focusing the analysis on project goals. The authors offer sample headings for the table based on analyses that they have conducted in the past (difficult cognitive element, why difficult, comm on errors, and cues and strategies used), but recommend that practitioners focus on the types of information that they will need to develop a new course or design a new system. The table also helps the practitioner see common themes in the data, as well as conflicting information given by multiple SMEs.
 
 <!--quoteend-->
 
+> Table 3. Example of a cognitive demands table
+>
 > | Difficult cognitive element                | Why difficult?                                                                                                                                                                                                                       | Common errors                                                                                                                               | Cues and strategies used                                                                                                                                                                                                                                                                                                                                     |
 > |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | Knowing where to search after an explosion | (1) Novices may not be trained in dealing with explosions. Other training suggests you should start at the source and work outward; (2) Not everyone knows about the Material Safety Data Sheets. These contain critical information | Novice would be likely to start at the source of the explosion. Starting at the source is a rule of thumb for most other kinds of incidents | (1) Start where you are most likely to find victims, keeping in mind safety considerations; (2) Refer to Material Safety Data Sheets to determine where dangerous chemicals are likely to be; (3) Consider the type of structure and where victims are likely to be; (4) Consider the likelihood of further explosions. Keep in mind the safety of your crew |
 > | Finding victims in a burning building      | There are lots of distracting noises. If you are nervous or tired, your own breathing makes it hard to hear anything else                                                                                                            | Novices sometimes don't recognize recognize their own breathing sounds; they mistakenly think they hear a victim breathing                  | (1) Both you and your partner stop, hold your breath, and listen; (2) Listen for crying, victims talking to themselves, victims knocking things over, etc                                                                                                                                                                                                    |
 >
 > [formatting mine]
->
-> [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})
 
 
 ## Bibliography {#bibliography}
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Chin, Cedric. 2021. “An Easier Method for Extracting Tacit Knowledge.” Commoncog. April 27, 2021. <a href="https://commoncog.com/an-easier-method-for-extracting-tacit-knowledge/">https://commoncog.com/an-easier-method-for-extracting-tacit-knowledge/</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Militello, Laura, and Robert Hutton. 1998. “Applied Cognitive Task Analysis (ACTA): A Practitioner’s Toolkit for Understanding Cognitive Task Demands.” <i>Ergonomics</i> 41 (December): 1618–41. <a href="https://doi.org/10.1080/001401398186108">https://doi.org/10.1080/001401398186108</a>.</div>
 </div>
-
-
-## Backlinks {#backlinks}
-
--   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})
--   [Laura Militello and Robert Hutton | Applied Cognitive Task Analysis (ACTA): A Practitioner's Toolkit for Understanding Cognitive Task Demands]({{< relref "laura_militello_and_robert_hutton_applied_cognitive_task_analysis_acta_a_practitioner_s_toolkit_for_understanding_cognitive_task_demands.md" >}})

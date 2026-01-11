@@ -19,3 +19,8 @@ slug = "27cb520e-f5d5-45b2-b92e-cde08209beef"
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Berdyaev, Nicolas. 1949. <i>From the Divine and the Human</i>.</div>
 </div>
+
+
+## Backlinks {#backlinks}
+
+-   [Cedric Chin | Expertise Is 'Just' Pattern Matching]({{< relref "chinExpertiseJustPatternMatching2020.md" >}})

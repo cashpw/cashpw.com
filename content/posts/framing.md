@@ -19,8 +19,3 @@ slug = "30cb897f-4ec4-4492-b23a-ac760ed49db2"
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>“Framing (Social Sciences).” 2022. In <i>Wikipedia</i>. <a href="https://en.wikipedia.org/w/index.php?title=Framing_(social_sciences)&oldid=1124065696">https://en.wikipedia.org/w/index.php?title=Framing_(social_sciences)&#38;oldid=1124065696</a>.</div>
 </div>
-
-
-## Backlinks {#backlinks}
-
--   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})

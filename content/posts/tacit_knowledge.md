@@ -23,5 +23,6 @@ slug = "d636dfa7-428d-457c-8db6-15fa61e03bef"
 
 ## Backlinks {#backlinks}
 
+-   [Cedric Chin | Expertise Is 'Just' Pattern Matching]({{< relref "chinExpertiseJustPatternMatching2020.md" >}})
 -   [Explicit knowledge]({{< relref "explicit_knowledge.md" >}})
 -   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})
