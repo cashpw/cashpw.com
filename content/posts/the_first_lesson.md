@@ -13,7 +13,7 @@ slug = "7c49d995-a4d4-4c95-84c0-9dae9d8ab498"
 >
 > Irulan Corrino, (<a href="#citeproc_bib_item_1">Herbert 1999</a>)
 
-One of my Favorites. A Lesson to teach my children.
+One of my [Favorites]({{< relref "favorites.md" >}}). A Lesson to teach my children.
 
 Related: Pedagogy, Growth mindset, Fixed mindset.
 

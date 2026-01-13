@@ -19,7 +19,7 @@ The simplicity of "Work smart, not hard" is deceptive. It's too easy to conclude
 
 ## Thoughts {#thoughts}
 
-This is one of my Favorites.
+This is one of my [Favorites]({{< relref "favorites.md" >}}).
 
 I feel seen by this years-old blog post and it's unpleasant. Particularly:
 

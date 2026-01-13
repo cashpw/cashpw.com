@@ -12,5 +12,5 @@ I prefer notes in my [personal knowledge management]({{< relref "personal_knowle
 
 ## Backlinks {#backlinks}
 
--   [Blog]({{< relref "proj--blog.md" >}})
 -   [Hide private links in blog posts]({{< relref "hide_private_links_on_blog.md" >}})
+-   [Personal website]({{< relref "proj--blog.md" >}})

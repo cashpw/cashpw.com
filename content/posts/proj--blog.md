@@ -1,19 +1,19 @@
 +++
-title = "Blog"
+title = "Personal website"
 author = ["Cash Prokop-Weaver"]
 date = 2025-11-22T11:22:00-08:00
-lastmod = 2026-01-10T23:23:00-08:00
+lastmod = 2026-01-12T22:55:00-08:00
 tags = ["project"]
 categories = ["project"]
 draft = false
 slug = "21336625-aab6-421f-98c8-988538fc0846"
 +++
 
-I thought I'd write a little bit about this blog for anyone curious as well as for my future{{< sidenote >}}So I can remember what I've done, and why.{{< /sidenote >}}and present{{< sidenote >}}Write to think{{< /sidenote >}}selves.
+I thought I'd write a little bit about this blog for anyone curious as well as for my future{{< sidenote >}}So I can remember what I've done, and why.{{< /sidenote >}}and present{{< sidenote >}}[Write to think]({{< relref "writing_to_think.md" >}}){{< /sidenote >}}selves.
 
-The purpose of this blog --- of me publishing any of these notes, which would otherwise still be written, but for my eyes only --- is primarily from my benefit: knowing (hoping) that others will read what I've written encourages me to write better and to think critically. It's good, to some [extent]({{< relref "hide_private_links_on_blog.md" >}}), to build something in public. I hope these notes can be of some use to the reader.
+The purpose of this blog --- of me publishing any of these notes, which would otherwise still be written, but for my eyes only --- is primarily from my benefit: knowing (hoping) that others will read what I've written encourages me to write better and to [think]({{< relref "writing_to_think.md" >}}) critically. It's good, to some [extent]({{< relref "hide_private_links_on_blog.md" >}}), to build something in public. I hope these notes can be of some use to the reader.
 
-This is at least the second time I've started a blog. I've been writing notes for a few years now, with myself as the [sole audience]({{< relref "matuschak_andy_write_notes_for_yourself_by_default_disregarding_audience.md" >}}). I'd previously set up `notes.cashpw.com` to publish the entire set in the style of [Andy Matuschak]({{< relref "andy_matuschak.md" >}}) but abandoned it because I found I was censoring myself while writing notes. Now, however, each note is [private by default]({{< relref "notes_should_be_private_by_default.md" >}}) and this gives me cover to work out nuanced, budding, or incomplete thoughts.
+This is at least the second time I've started a blog. I've been [writing notes]({{< relref "how_i_write_notes.md" >}}) for a few years now, with myself as the [sole audience]({{< relref "matuschak_andy_write_notes_for_yourself_by_default_disregarding_audience.md" >}}). I'd previously set up `notes.cashpw.com` to publish the entire set in the style of [Andy Matuschak]({{< relref "andy_matuschak.md" >}}) but abandoned it because I found I was censoring myself while writing notes. Now, however, each note is [private by default]({{< relref "notes_should_be_private_by_default.md" >}}) and this gives me cover to work out nuanced, budding, or incomplete thoughts.
 
 I've opted to publish under my own control because I like tinkering and want to maintain a specific aesthetic; minimal and focused on the text.
 
@@ -170,6 +170,22 @@ A beginning is the time for taking the most delicate care that the balances are 
 The following adds the "Backlinks" heading and populates it with (public) notes which link to the current note.
 
 ```emacs-lisp
+(defun cashpw/org-roam-get-backlinks-for-current-node ()
+  "Return unique list of `org-roam-node's which link back to current node."
+  (when (org-roam-file-p)
+    (let ((-compare-fn
+           ;; For -uniq
+           (lambda (a b)
+             (string=
+              (org-roam-node-id (org-roam-backlink-source-node a))
+              (org-roam-node-id (org-roam-backlink-source-node b))))))
+      (-uniq
+       (--filter
+        (let ((source-node (org-roam-backlink-source-node it)))
+          ;; Remove flashcards
+          (not (assoc "FC_ALGO" (org-roam-node-properties source-node))))
+        (org-mem-roamy-mk-backlinks (org-roam-node-at-point)))))))
+
 (defun cashpw/org-roam-get-public-backlinks-for-current-node ()
   "Return unique list of `org-roam-node's which link back to current node."
   (when (org-roam-file-p)

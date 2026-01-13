@@ -71,4 +71,4 @@ Perhaps there's a way to get around this in Hugo. I opted to move up a layer and
 
 ## Backlinks {#backlinks}
 
--   [Blog]({{< relref "proj--blog.md" >}})
+-   [Personal website]({{< relref "proj--blog.md" >}})

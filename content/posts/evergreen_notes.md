@@ -20,3 +20,4 @@ slug = "eb88f117-4925-42c7-a9cf-5789987fd933"
 
 -   [Andy Matuschak]({{< relref "andy_matuschak.md" >}})
 -   [Andy Matuschak | Write Notes for Yourself by Default, Disregarding Audience]({{< relref "matuschak_andy_write_notes_for_yourself_by_default_disregarding_audience.md" >}})
+-   [On writing cards]({{< relref "spaced_repetition.md#on-writing-cards" >}})

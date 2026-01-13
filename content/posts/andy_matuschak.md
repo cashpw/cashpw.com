@@ -14,6 +14,7 @@ A "a software engineer, designer, and researcher" who, among other things:
 
 ## Backlinks {#backlinks}
 
+-   [Andy Matuschak | Evergreen Notes Should Be Densely Linked]({{< relref "EvergreenNotesShouldBeDenselyLinked.md" >}})
 -   [Andy Matuschak | Write Notes for Yourself by Default, Disregarding Audience]({{< relref "matuschak_andy_write_notes_for_yourself_by_default_disregarding_audience.md" >}})
--   [Blog]({{< relref "proj--blog.md" >}})
 -   [Examples of Zettelkasten Notes]({{< relref "examples_of_zettelkasten_notes.md" >}})
+-   [Personal website]({{< relref "proj--blog.md" >}})

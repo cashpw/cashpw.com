@@ -28,3 +28,4 @@ slug = "2bb656cd-6834-4534-95e2-c77df28ffccb"
 
 -   [Deliberate practice]({{< relref "deliberate_practice.md" >}})
 -   [How to become an expert]({{< relref "how_to_become_an_expert.md" >}})
+-   [Spaced repetition]({{< relref "spaced_repetition.md" >}})

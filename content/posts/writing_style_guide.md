@@ -9,7 +9,7 @@ draft = false
 slug = "05911fff-a79b-4462-bf6d-a3cec4e1c9f2"
 +++
 
-A style guide for how I prefer to write in general and, specifically, in these notes.
+A style guide for how I prefer to write in general and, specifically, in these [notes]({{< relref "how_i_write_notes.md" >}}).
 
 
 ## Prose {#prose}
@@ -103,3 +103,8 @@ Backlinks are the backbone of a powerful [zettelkasten]({{< relref "Zettelkasten
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Herbert, Frank. 1999. <i>Dune</i>. London: Victor Gollancz.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Swartz, Aaron. 2010. “Theory of Change.” March 14, 2010. <a href="http://www.aaronsw.com/weblog/theoryofchange">http://www.aaronsw.com/weblog/theoryofchange</a>.</div>
 </div>
+
+
+## Backlinks {#backlinks}
+
+-   [How I write notes]({{< relref "how_i_write_notes.md" >}})

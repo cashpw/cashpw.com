@@ -21,5 +21,6 @@ slug = "773406e0-fe95-41f4-a254-b2c6ade18ce9"
 
 ## Backlinks {#backlinks}
 
+-   [How I write notes]({{< relref "how_i_write_notes.md" >}})
 -   [Notes should be private by default]({{< relref "notes_should_be_private_by_default.md" >}})
 -   [Zettelkasten]({{< relref "Zettelkasten2021.md" >}})
